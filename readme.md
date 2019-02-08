@@ -1,3 +1,23 @@
+這個repo的目的是用來儲存設定好在docker可以直接執行的調整。
+
+可以直接透過
+
+```
+curl -sS https://raw.githubusercontent.com/alantsa/monica/master/docker-compose.yml > docker-compose.yml
+curl -sS https://raw.githubusercontent.com/alantsai/monica/master/.env > .env
+```
+
+下載需要的檔案，然後直接輸入 `docker-compose up` 開始使用。
+
+`.env` 檔案需要 設定 （最好調整，如果不調整還是可以run）：
+1. `APP_KEY` 32 位亂數 - 最好都不一樣才好
+2. `MAIL_PASSWORD` 才能夠寄信成功
+
+以下是原本repo内容
+
+-----------
+-----------
+
 <p align="center"><img src="https://user-images.githubusercontent.com/61099/37693034-5783b3d6-2c93-11e8-80ea-bd78438dcd51.png"></p>
 <h1 align="center">Personal Relationship Manager</h1>
 
