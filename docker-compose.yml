@@ -20,6 +20,8 @@ services:
       - MYSQL_DATABASE=monica
       - MYSQL_USER=homestead
       - MYSQL_PASSWORD=secret
+    ports:
+      - 3306:3306
     volumes:
       - monica_mysql:/var/lib/mysql
     restart: always
